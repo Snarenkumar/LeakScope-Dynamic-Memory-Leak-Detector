@@ -1,0 +1,16 @@
+# Build outputs
+*.o
+*.so
+libleakscope.so
+
+# Sample binaries
+samples/leaky
+samples/threads
+samples/double_free
+samples/clean
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
