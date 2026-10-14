@@ -344,3 +344,6 @@ static void leakscope_exit_report() {
     print_leak_groups(groups, num_groups);
     fprintf(stderr, "=================================================================\n\n");
 }
+
+
+
