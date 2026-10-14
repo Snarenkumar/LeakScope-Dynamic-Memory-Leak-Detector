@@ -1,5 +1,8 @@
 # LeakScope: Architecture & Deep-Dive Explanation
 
+> 🐣 **New to systems programming?**  
+> If this deep dive feels overwhelming, read **[simple_execution.md](../simple_execution.md)** first for a plain-English explanation!
+
 This document breaks down **LeakScope** block-by-block in plain English. It covers why and how each component works, the classic traps encountered when building an `LD_PRELOAD` memory profiler, and the C/C++ language features used.
 
 ---

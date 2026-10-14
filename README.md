@@ -1,7 +1,17 @@
 # LeakScope 🔍
 > **A lightweight, dynamic memory leak detector for Linux built using `LD_PRELOAD` and `dlsym(RTLD_NEXT)`.**
 
-LeakScope intercepts dynamic memory allocations (`malloc`, `calloc`, `realloc`, `free`, and C++ `new`/`delete`) at runtime without requiring any source code modifications or recompilation. Everything is containerized in Docker, so you can build and run it without needing a native Linux environment installed.
+> 🐣 **New to this project or feeling overwhelmed?**  
+> Read the beginner-friendly guide: **[simple_execution.md](simple_execution.md)**  
+> *(No crazy jargon, real-world analogies, step-by-step pictures, and plain English!)*
+
+---
+
+### What is LeakScope in Plain English?
+When programs run, they borrow chunks of memory (RAM) from the computer. If they forget to return it, that's called a **memory leak**, which causes computers to slow down or crash.
+
+**LeakScope** acts like an invisible security guard. Without changing a single line of your program's source code, LeakScope watches your program run, notes down every piece of memory borrowed and returned, and warns you at the end:  
+👉 *"Hey! Line 26 in leaky.cpp took 200 bytes and never gave it back!"*
 
 ---
 

@@ -1,4 +1,7 @@
-﻿# LeakScope: Project Flow & How It All Works
+# LeakScope: Project Flow & How It All Works
+
+> 🐣 **Looking for a super simple, zero-jargon explanation?**  
+> Check out **[simple_execution.md](../simple_execution.md)** first!
 
 This document explains the complete pipeline of LeakScope — from how a program's allocations are intercepted, tracked, checked for errors, and reported at exit. Read this first before looking at any source code.
 
